@@ -43,56 +43,69 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-      <script>            
+      <script>
+      		
+var style = [
+  {
+    featureType: "road.local",
+    elementType: "geometry",
+    stylers: [
+	  { hue: "#00d4ff" },
+	  { saturation: 100 },
+	  { lightness: -40 },
+	  { gamma: 0.51 }
+	]
+  }
+];
+
+
+
+
+
             function initMap() {
               var map = new google.maps.Map(document.getElementById('map'), {
                 zoom: 12,
                 center: {lat: 50.62, lng: 26.26}
               });
-
+              map.setOptions({styles: style});
               setMarkers(map);
             }
             var beaches = [
-              ['hfdh', 50.6131722, 26.2720472, 4],
-              ['fdhfdh', 50.6516693, 26.1925223, 5],
-              ['Csfhsch', 50.6035367, 26.1947755, 3],
-              ['Mashsach', 50.6012749, 26.2589769, 2],
-              ['Maroshfsch', 50.6339021, 26.2668659, 1]
+              ['hfdh', 50.6131722, 26.2720472, 4,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>'],
+              ['fdhfdh', 50.6586693, 26.1985223, 6,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>'],
+              ['fdhfdh', 50.6516693, 26.1925223, 5,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>'],
+              ['Csfhsch', 50.6035367, 26.1947755, 3,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>'],
+              ['Mashsach', 50.6012749, 26.2589769, 2,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>'],
+              ['Maroshfsch', 50.6339021, 26.2668659, 1,'<p><b>Uluru1</b>u is listed as a World Heritage Site.</p>']
             ];
 
             function setMarkers(map) {             
-              for (var i = 0; i < beaches.length; i++) {
-                var beach = beaches[i];
-                var marker = new google.maps.Marker({
-                  position: {lat: beach[1], lng: beach[2]},
-                  map: map,
-                  center: beaches[0],                
-                  title: beach[0],                  
-                  zIndex: beach[3]
-                });  
-                /*var infowindow = new google.maps.InfoWindow({ content: contentString[i] });
+              for (var i = 0; i <= beaches.length; i++) {
+                var beach = beaches[i];               
+                var infowindow = new google.maps.InfoWindow({ content: beach[4] });
                 var markers = new google.maps.Marker({
-                  position: {lat: beach[1][i], lng: beach[2][i]},
+                  position: {lat: beach[1], lng: beach[2]},
+                  center: beaches[0],
                   map: map,
-                  title: beaches[0]
+                  //content: beach[4],
+                  /*draggable: true,
+    			  animation: google.maps.Animation.DROP,*/
+                  title: beach[0],
+                  zIndex: beach[3]
                 });
+                /*markers.addListener('click', function(){
+                	for (var i =0; i < markers.length; i++) {
+					    setTimeout(function() {
+					      addMarkerMethod();
+					    }, i * 200);
+					  }
+                });*/
                 markers.addListener('click', function() {
                   infowindow.open(map, markers);
-                });              */
-              }             
-            }
-
-            var contentString = [
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>',
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>',
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>',
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>',
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>',
-                                  '<p><b>Uluru</b>u is listed as a World Heritage Site.</p>'
-                                ];
-
-            
-      </script>
+                });
+              }                        
+            }     
+		</script>
 
 
       <script async defer
