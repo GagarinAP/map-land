@@ -20,3 +20,12 @@ main {
 .parallax-container {
     height: 600px;
 }
+
+.reddd{
+	background-color: #26A69A;
+	z-index: 5;
+	position: relative;
+	width: 400px;
+	height: 350px;
+	margin-top: 10%;
+}
