@@ -148,12 +148,12 @@ function initMap() {
         
     // Multiple Markers
     var markers = [
-        ['hfdh', 50.6131722, 26.2720472],
-        ['fdhfdh', 50.6586693, 26.1985223],
-        ['fdhfdh', 50.6516693, 26.1925223],
-        ['Csfhsch', 50.6035367, 26.1947755],
-        ['Mashsach', 50.6012749, 26.2589769],
-        ['Maroshfsch', 50.6339021, 26.2668659]
+        ['Лот №1', 50.6131722, 26.2720472],
+        ['Лот №2', 50.6586693, 26.1985223],
+        ['Лот №3', 50.6516693, 26.1925223],
+        ['Лот №4', 50.6035367, 26.1947755],
+        ['Лот №5', 50.6012749, 26.2589769],
+        ['Лот №6', 50.6339021, 26.2668659]
     ];
                         
     // Info Window Content
@@ -183,10 +183,29 @@ function initMap() {
         '</div>'],['<div class="info_content">' +
         '<h3>London Eye</h3>' +
         '<p>The London Eye is a giant Ferris wheel situated on the banks of the River Thames. The entire structure is 135 metres (443 ft) tall and the wheel has a diameter of 120 metres (394 ft).</p>' +        '</div>'],
-        ['<div class="content">' +
-        '<h3>Palace of Westminster</h3>' +
+        ['<div class="container"><div class="row"><div class="col l12 s12">' +
+        '<h3>Лот №6</h3>' +
         '<p>The Palace of Westminster is the meeting place of the House of Commons and the House of Lords, the two houses of the Parliament of the United Kingdom. Commonly known as the Houses of Parliament after its tenants.</p>' +
-        '<img class="responsive-img" src="img/office.jpg"></div>']
+        '<table class="highlight responsive-table"><thead><tr>'+
+              '<th data-field="id">Name</th>'+
+              '<th data-field="name">Item Name</th>'+
+              '<th data-field="price">Item Price</th>'+
+          '</tr></thead>'+
+        '<tbody><tr>'+
+            '<td>Alvin</td>'+
+            '<td>Eclair</td>'+
+            '<td>$0.87</td>'+
+        '</tr><tr><td>Alan</td>'+
+            '<td>Jellybean</td>'+
+            '<td>$3.76</td>'+
+          '</tr><tr>'+
+            '<td>Jonathan</td>'+
+            '<td>Lollipop</td>'+
+           '<td>$7.00</td>'+
+          '</tr>'+
+        '</tbody>'+
+      '</table>'+
+        '<img class="responsive-img col l6 s6" src="img/office.jpg"><img class="responsive-img col l6 s6" src="img/office.jpg"><a class="waves-effect waves-teal btn-flat modal-trigger" href="#modal1">Детальніше</a></div></div></div>']
     ];
         
     // Display multiple markers on a map
