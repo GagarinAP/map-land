@@ -11,6 +11,8 @@
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
       <link type="text/css" rel="stylesheet" href="css/style.css" />      
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="http://maps.google.com/maps/api/js?sensor=false" 
+          type="text/javascript"></script>
     </head>
 
     <body>
@@ -77,11 +79,10 @@
 
 
 
-
 <div class="container marginTB hide-on-small-only" id="mapa">  
   <h2 class="center flow-text teal lighten-2 z-depth-5">Мапа земельних ділянок в <strong>Рівненській області</strong>.</h2>
 		<div class="col s12 l8 m8 z-depth-5" id="map_wrapper">
-	    <div id="map_canvas" class="mapping"></div>
+	    <div id="map" class="mapping"></div>
 	  </div>
 </div>
 
@@ -122,7 +123,7 @@
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №2<i class="material-icons right">more_vert</i></span>
-              <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Детальніше</a></p>
+              <p><a class="waves-effect waves-light btn modal-trigger" href="#modal2">Детальніше</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -267,6 +268,19 @@
   <div class="modal-content">
     <h4>Modal Header</h4>
     <p>A bunch of text</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique dolorem dolor dicta magnam voluptates culpa iste exercitationem quidem modi consequatur temporibus libero sequi saepe velit praesentium totam aperiam quas itaque porro, facere amet fuga magni labore. Ea, laudantium harum expedita iusto delectus. Quam temporibus, corporis. Sed porro, soluta ducimus ipsa sequi placeat rerum distinctio culpa dignissimos, eos quam molestias at incidunt nihil provident explicabo. Aperiam itaque doloremque totam ea id, magnam harum neque illum magni, quasi inventore ullam quibusdam. Vero, mollitia commodi dolore libero totam incidunt, dolorem nihil ad dignissimos, facilis ratione, et voluptate. Rem, dolor suscipit optio eligendi iure tenetur quibusdam, quos qui eveniet assumenda quasi corporis itaque natus odit fugit culpa sunt sed est. Aliquid in animi modi rerum laboriosam eum rem dolore, distinctio enim reprehenderit. Ex, tenetur expedita, eius dolores quod modi iusto ipsa unde nobis repudiandae sint iure eligendi libero veritatis natus perspiciatis deserunt, sit laudantium! Esse rerum, neque impedit doloremque provident mollitia unde id non perspiciatis nemo eligendi dolorum temporibus sit natus, accusamus, explicabo aliquam recusandae quae voluptates in libero, repellat? Voluptates omnis dolores ex, rem non, aliquam quis! Mollitia quia reiciendis atque! Veritatis nisi quidem, libero quae voluptatum animi dolore, porro asperiores atque.</p>
+    <img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="400" src="img/22.jpg">
+  </div>
+  <div class="modal-footer">
+    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Закрити</a>
+  </div>
+</div>
+
+<div id="modal2" class="modal">
+  <div class="modal-content">
+    <h4>Modal Header</h4>
+    <p>A bunch of text</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique dolorem dolor dicta magnam voluptates culpa iste exercitationem quidem modi consequatur temporibus libero sequi saepe velit praesentium totam aperiam quas itaque porro, facere amet fuga magni labore. Ea, laudantium harum expedita iusto delectus. Quam temporibus, corporis. Sed porro, soluta ducimus ipsa sequi placeat rerum distinctio culpa dignissimos, eos quam molestias at incidunt nihil provident explicabo. Aperiam itaque doloremque totam ea id, magnam harum neque illum magni, quasi inventore ullam quibusdam. Vero, mollitia commodi dolore libero totam incidunt, dolorem nihil ad dignissimos, facilis ratione, et voluptate. Rem, dolor suscipit optio eligendi iure tenetur quibusdam, quos qui eveniet assumenda quasi corporis itaque natus odit fugit culpa sunt sed est. Aliquid in animi modi rerum laboriosam eum rem dolore, distinctio enim reprehenderit. Ex, tenetur expedita, eius dolores quod modi iusto ipsa unde nobis repudiandae sint iure eligendi libero veritatis natus perspiciatis deserunt, sit laudantium! Esse rerum, neque impedit doloremque provident mollitia unde id non perspiciatis nemo eligendi dolorum temporibus sit natus, accusamus, explicabo aliquam recusandae quae voluptates in libero, repellat? Voluptates omnis dolores ex, rem non, aliquam quis! Mollitia quia reiciendis atque! Veritatis nisi quidem, libero quae voluptatum animi dolore, porro asperiores atque.</p>
     <img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="400" src="img/22.jpg">
   </div>
   <div class="modal-footer">
@@ -331,21 +345,21 @@
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
       <script type="text/javascript" src="js/map.js"></script>  
+      <script type="text/javascript" src="js/map-new.js"></script>
 
-      <script async defer
+      <!-- <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpSKIk7W0ZX5cNGZFI6khHVtOPLeQLUV4&callback=initMap">
-      </script>
+      </script> -->
 
 
       <script>
-        $(document).ready(function(){
-          // the "href" attribute of .modal-trigger must specify the modal ID that wants to be triggered
+        $(document).ready(function(){          
           $('.modal-trigger').leanModal();
         });
         $('.button-collapse').sideNav({
-            menuWidth: 300, // Default is 240
-            edge: 'left', // Choose the horizontal origin
-            closeOnClick: true // Closes side-nav on <a> clicks, useful for Angular/Meteor
+            menuWidth: 300, 
+            edge: 'left', 
+            closeOnClick: true
           }
         );
         $(document).ready(function(){
