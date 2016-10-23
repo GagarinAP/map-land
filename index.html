@@ -1,86 +1,117 @@
 <!DOCTYPE html>
-  <html>
+<html lang="en">
     <head>    
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=Edge" />      
-      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">  
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />  
       <link rel="shortcut icon" href="favicon.ico" />
       <title>Land.rv.ua -  Купити земельну ділянку в Рівному</title>
-      <meta name="description" content="Продаж земельних ділянок в Рівному та Рівненській області." />
+      <meta name="description" content="Продаж земельних ділянок в Рівному та Рівненській області. Земельні ділянки під житлову, індивідуальну та комерційну діяльність." />
       <meta name="keywords" content="купити земельну ділянку, земельна ділянка в Рівному, земельні ділянки, купити ділянку, купити, рівне, земля в Рівному." />    
-      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-      <link type="text/css" rel="stylesheet" href="css/style.css" />      
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>      
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css" />
+      <link type="text/css" rel="stylesheet" href="css/style.css" />  
+      <link type="text/css" rel="stylesheet" href="css/animate.css" />     
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>   
+      <meta name="google-site-verification" content="nJdnmCzaX8Z1QMw_ShFNvpHmtw3NAll_UBxuext75nc" />   
     </head>
 
-    <body>
-    
-    <div class="navbar-fixed teal lighten-2">
-      <nav class="teal lighten-2">
-        <div class="nav-wrapper container teal lighten-2">
-          <a href="#" class="brand-logo"><img src="img/logo.png" alt="Logo"></a>
-          <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>            
-          <ul class="right hide-on-med-and-down">
+    <body id="index">
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-38894108-7', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+      var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/ru_RU/sdk.js#xfbml=1&version=v2.8&appId=1407128079596219";
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <div class="navbar-fixed teal darken-1 hoverable" id="menu">
+      <nav class="teal darken-1">
+        <div class="nav-wrapper container teal darken-1">
+          <a href="#index" class="brand-logo"><img src="img/logo.png" alt="Logo"></a>
+          <a href="#index" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>            
+          <ul class="right hide-on-med-and-down flow-text">            
             <li><a href="#mapa">Мапа</a></li>
             <li><a href="#dilianki">Ділянки</a></li>
+            <li><a href="#service">Iнформація</a></li>
             <li><a href="#contact">Контакти</a></li>
-            <li><a href="skype:+380(98)344-44-84?call"><i class="Large material-icons left">phone</i>098 344-44-84</a></li>         
+            <li><a href="skype:+380(68)1005007?call" class="white-text"><i class="Large material-icons left">phone</i>068 100 50 07</a></li>         
           </ul>
           
-          <ul class="side-nav" id="mobile-demo">
-            <li><a href="#"><img src="img/logo.png" alt="Logo"></a></li><br>
+          <ul class="side-nav" id="mobile-demo">            
             <li><a href="#mapa">Мапа</a></li>
             <li><a href="#dilianki">Ділянки</a></li>
+            <li><a href="#service">Iнформація</a></li>
             <li><a href="#contact">Контакти</a></li>
-            <li><a href="skype:+380(98)344-44-84?call"><i class="Large material-icons left">phone</i>098 344-44-84</a></li>           
+            <li class="active"><a href="skype:+380(68)1005007?call" class="black-text"><i class="Large material-icons left">phone</i>Звоніть: 068 100 50 07</a></li>           
           </ul>
         </div>
       </nav>      
     </div>           
 
 
-          <div class="slider">
-            <ul class="slides hoverable">
+          <div class="slider">          
+            <ul class="slides z-depth-1">            
               <li>
-                <img src="img/111.jpg">
+                <img src="img/header.jpg" alt="image" class="responsive-img">
                 <div class="caption center-align">
-                  <h3 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">Бажаєте купити земельну ділянку під забудову?</h3>
-                  <h5 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">Без посередників?</h5>
-                  <div class="carousel-fixed-item center-align">
-                    <a class="btn-large waves-effect waves-light teal lighten-2 z-depth-1 flow-text hoverable">Телефон: <strong>098 344-44-84</strong></a>
+                  <h3 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">Бажаєте купити земельну ділянку під забудову?</h3>
+                  <h5 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">Без посередників?</h5>
+                  <div class="carousel-fixed-item center-align opasity">
+                    <a class="btn-large waves-effect waves-light teal darken-4 z-depth-1 flow-text hoverable animated pulse infinite"><i class="Large material-icons left">phone</i><strong>068 100 50 07</strong></a>
                   </div>
                 </div>
               </li>
               <li>
-                <img src="img/222.jpg">
+                <img src="img/header.jpg" alt="image" class="responsive-img">
                 <div class="caption left-align">
-                  <h3 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">В нас є земельні ділянки на любий смак!</h3>
-                  <h5 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">Ціни від 1 тис. $ за соту.</h5>
-                  <div class="carousel-fixed-item left-align">
-                    <a class="btn-large waves-effect waves-light teal lighten-2 z-depth-3 flow-text hoverable">098 344-44-84</a>
+                  <h3 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">В нас є земельні ділянки на любий смак!</h3>
+                  <h5 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">Ціни від 1 тис. $ за соту.</h5>
+                  <div class="carousel-fixed-item left-align opasity">
+                    <a class="btn-large waves-effect waves-light teal darken-4 z-depth-1 flow-text hoverable animated pulse infinite"><i class="Large material-icons left">phone</i><strong>068 100 50 07</strong></a>
                   </div>
                 </div>
               </li>
               <li>
-                <img src="img/333.jpg"> 
+                <img src="img/header.jpg" alt="image" class="responsive-img">
                 <div class="caption right-align">
-                  <h3 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">Житлова та громадська забудова, індивідуальна та промислова завудова, комерція...</h3>
-                  <h5 class="card-panel teal lighten-2 z-depth-1 flow-text hoverable">Наявність електроенергії, газу, водопідведення та каналізація.</h5>
-                  <div class="carousel-fixed-item right-align">
-                    <a class="btn-large waves-effect waves-light teal lighten-2 z-depth-1 flow-text hoverable">098 344-44-84</a>
+                  <h3 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">Пропонуємо ділянки під житлову, індивідуальну та комерційну діяльність.</h3>
+                  <h5 class="card-panel teal darken-4 z-depth-1 flow-text hoverable opasity">Наявність електроенергії, газу, води та каналізації.</h5>
+                  <div class="carousel-fixed-item right-align opasity">
+                    <a class="btn-large waves-effect waves-light teal darken-4 z-depth-1 flow-text hoverable animated pulse infinite"><i class="Large material-icons left">phone</i><strong>068 100 50 07</strong></a>
                   </div>
                 </div>
               </li>              
             </ul>
           </div>
 
+<div class="container animated zoomInUp">
+    <div class="row center">        
+        <div class="col s12 l12 m12">
+          <img src="img/brand.png" alt="" class="pad10pxtop">
+        </div>
+        <div class="col s12 l8 offset-l2 m12 z-depth-1">          
+          <h1 class="fontNew flow-text white-text">Land.rv.ua - <strong>Продаж земельних ділянок в Рівному та Рівненській області</strong></h1>
+        </div>        
+    </div>  
+</div>
 
-
-<div id="mapa" class="page-map marginTB hoverable">
-  <div class="container hoverable">
+<div id="mapa" class="page-map marginTB">
+  <div class="container z-depth-1">
     <div class="row">
         <div class="col s12 l12 m12">
-          <h2 class="center flow-text teal lighten-2 z-depth-1 hoverable">Мапа земельних ділянок в <strong>Рівненській області</strong></h2>
+          <h2 class="center flow-text teal lighten-2 z-depth-1 mar10upanddown">Мапа земельних ділянок в <strong>Рівненській області </strong><i class="material-icons">my_location</i></h2>
         </div>
     		<div class="col s12 l12 m12" id="map_wrapper">
     	    <div id="map" class="mapping hoverable"></div>
@@ -89,21 +120,21 @@
   </div>
 </div>
 
-<div class="parallax-container hoverable">
-  <div class="parallax"><img src="img/Lakeside_SunRise_1920x1080.jpg"></div>
+<div class="parallax-container z-depth-1">
+  <div class="parallax"><img src="img/one.jpg" alt="image"></div>
 </div>
 
-<div id="dilianki" class="marginTB hoverable">
-  <div class="container hoverable">   
+<div id="dilianki" class="marginTB z-depth-1">
+  <div class="container z-depth-1">   
   <div class="row"> 
     <div class="col s12 l12 m12">
-      <h2 class="center flow-text teal lighten-2 z-depth-1 hoverable">Земельні ділянки</h2> 
+      <h2 class="center flow-text teal lighten-2 z-depth-1 mar10upanddown">Земельні ділянки <i class="material-icons">business</i></h2> 
     </div>
     <div class="col s12 l12 m12">      
-      <ul class="tabs z-depth-1 hoverable">
-        <li class="tab col s3"><a href="#test1" class="flow-text">~10 м<sup>2</sup></a></li>
-        <li class="tab col s3"><a class="active flow-text" href="#test2">~20 м<sup>2</sup></a></li>        
-        <li class="tab col s3"><a href="#test3" class="flow-text">>20 м<sup>2</sup></a></li>
+      <ul class="tabs z-depth-1">
+        <li class="tab col s3"><a href="#test1" class="green-text flow-text">Житлове</a></li>
+        <li class="tab col s3"><a class="active green-text flow-text" href="#test2">Індивідуальне</a></li>        
+        <li class="tab col s3"><a href="#test3" class="green-text flow-text">Комерція</a></li>
       </ul>
     </div>
     <div id="test1" class="col s12 l12 m12">
@@ -112,11 +143,11 @@
           <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/33.jpg">
+              <img class="activator" src="img/33.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №1<i class="material-icons right">more_vert</i></span>
-              <p><a class="btn modal-trigger" href="#modal1">Детальніше</a></p>
+              <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Детальніше</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4"><strong>Лот №1</strong><i class="material-icons right">close</i></span>
@@ -129,11 +160,11 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/11.jpg">
+              <img class="activator" src="img/11.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №2<i class="material-icons right">more_vert</i></span>
-              <p><a class="waves-effect waves-light btn modal-trigger" href="#modal2">Детальніше</a></p>
+              <p><a class="waves-effect waves-light btn modal-trigger" href="#modal1">Детальніше</a></p>
             </div>
             <div class="card-reveal">
               <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
@@ -145,7 +176,7 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/22.jpg">
+              <img class="activator" src="img/22.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №3<i class="material-icons right">more_vert</i></span>
@@ -167,7 +198,7 @@
           <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/11.jpg">
+              <img class="activator" src="img/11.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №4<i class="material-icons right">more_vert</i></span>
@@ -184,7 +215,7 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/22.jpg">
+              <img class="activator" src="img/22.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №5<i class="material-icons right">more_vert</i></span>
@@ -200,7 +231,7 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/33.jpg">
+              <img class="activator" src="img/33.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №6<i class="material-icons right">more_vert</i></span>
@@ -222,7 +253,7 @@
           <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/22.jpg">
+              <img class="activator" src="img/22.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №7<i class="material-icons right">more_vert</i></span>
@@ -239,7 +270,7 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/22.jpg">
+              <img class="activator" src="img/22.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №8<i class="material-icons right">more_vert</i></span>
@@ -255,7 +286,7 @@
         <div class="col s12 l4">
               <div class="card hoverable">
             <div class="card-image waves-effect waves-block waves-light">
-              <img class="activator" src="img/11.jpg">
+              <img class="activator" src="img/11.jpg" alt="image">
             </div>
             <div class="card-content">
               <span class="card-title activator grey-text text-darken-4">Лот №9<i class="material-icons right">more_vert</i></span>
@@ -274,63 +305,132 @@
 </div>  
 </div>
 
+
 <div id="modal1" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique dolorem dolor dicta magnam voluptates culpa iste exercitationem quidem modi consequatur temporibus libero sequi saepe velit praesentium totam aperiam quas itaque porro, facere amet fuga magni labore. Ea, laudantium harum expedita iusto delectus. Quam temporibus, corporis. Sed porro, soluta ducimus ipsa sequi placeat rerum distinctio culpa dignissimos, eos quam molestias at incidunt nihil provident explicabo. Aperiam itaque doloremque totam ea id, magnam harum neque illum magni, quasi inventore ullam quibusdam. Vero, mollitia commodi dolore libero totam incidunt, dolorem nihil ad dignissimos, facilis ratione, et voluptate. Rem, dolor suscipit optio eligendi iure tenetur quibusdam, quos qui eveniet assumenda quasi corporis itaque natus odit fugit culpa sunt sed est. Aliquid in animi modi rerum laboriosam eum rem dolore, distinctio enim reprehenderit. Ex, tenetur expedita, eius dolores quod modi iusto ipsa unde nobis repudiandae sint iure eligendi libero veritatis natus perspiciatis deserunt, sit laudantium! Esse rerum, neque impedit doloremque provident mollitia unde id non perspiciatis nemo eligendi dolorum temporibus sit natus, accusamus, explicabo aliquam recusandae quae voluptates in libero, repellat? Voluptates omnis dolores ex, rem non, aliquam quis! Mollitia quia reiciendis atque! Veritatis nisi quidem, libero quae voluptatum animi dolore, porro asperiores atque.</p>
-    <img class="materialboxed hoverable" data-caption="A picture of some deer and tons of trees" width="400" src="img/22.jpg">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Закрити</a>
-  </div>
-</div>
-
-<div id="modal2" class="modal">
-  <div class="modal-content">
-    <h4>Modal Header</h4>
-    <p>A bunch of text</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam similique dolorem dolor dicta magnam voluptates culpa iste exercitationem quidem modi consequatur temporibus libero sequi saepe velit praesentium totam aperiam quas itaque porro, facere amet fuga magni labore. Ea, laudantium harum expedita iusto delectus. Quam temporibus, corporis. Sed porro, soluta ducimus ipsa sequi placeat rerum distinctio culpa dignissimos, eos quam molestias at incidunt nihil provident explicabo. Aperiam itaque doloremque totam ea id, magnam harum neque illum magni, quasi inventore ullam quibusdam. Vero, mollitia commodi dolore libero totam incidunt, dolorem nihil ad dignissimos, facilis ratione, et voluptate. Rem, dolor suscipit optio eligendi iure tenetur quibusdam, quos qui eveniet assumenda quasi corporis itaque natus odit fugit culpa sunt sed est. Aliquid in animi modi rerum laboriosam eum rem dolore, distinctio enim reprehenderit. Ex, tenetur expedita, eius dolores quod modi iusto ipsa unde nobis repudiandae sint iure eligendi libero veritatis natus perspiciatis deserunt, sit laudantium! Esse rerum, neque impedit doloremque provident mollitia unde id non perspiciatis nemo eligendi dolorum temporibus sit natus, accusamus, explicabo aliquam recusandae quae voluptates in libero, repellat? Voluptates omnis dolores ex, rem non, aliquam quis! Mollitia quia reiciendis atque! Veritatis nisi quidem, libero quae voluptatum animi dolore, porro asperiores atque.</p>
-    <img class="materialboxed" data-caption="A picture of some deer and tons of trees" width="400" src="img/22.jpg">
-  </div>
-  <div class="modal-footer">
-    <a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Закрити</a>
-  </div>
+    <div class="modal-content">
+      <div class="row">
+        <div class="col s12 l6 m12">
+          <img class="materialboxed responsive-img" data-caption="A picture of some deer and tons of trees" src="img/22.jpg" alt="image">
+        </div>
+      
+        <div class="col s12 l6 m12">
+          <h4>Modal Header</h4>     
+          <p>A bunch of text</p>
+          <p>lorem200</p>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Закрити</a>
+    </div>
 </div>
 
 
 
+<div class="parallax-container z-depth-1">
+	<div class="parallax"><img src="img/two.jpg" alt="image"></div>
+</div>
 
-<div class="parallax-container hoverable">
-	<div class="parallax"><img src="img/material-wallpaper-24.jpg"></div>
+<div id="service" class="marginTB z-depth-1">
+<div class="container z-depth-1">
+    <div class="row">
+      <div class="col s12 m12 l12 center">
+        <h2 class="center flow-text teal lighten-2 z-depth-1 mar10upanddown">Інформація <i class="material-icons">info_outline</i></h2> 
+      </div>
+    </div>
+
+    <div class="row pad50bottom">
+      <div class="col s12 m12 l4 teal darken-2 z-depth-1 hoverable">
+        <div class="icon-block mar10px">
+          <div class="center green-text"><i class="large material-icons">flash_on</i></div>
+          <h5 class="center white-text flow-text teal darken-4 z-depth-1 mar10upanddown">Житлове будівництво</h5>
+            <p class="black-text">Якщо ви мрієте про власний будинок і вирішили здійснити цю мрію шляхом будівництва будинку ви розпочинаєте непростий шлях.</p>
+
+            <p class="black-text">Для початку визначимось які саме типи будинків ви можете звести на власній земельній ділянці. Ми зупинимось лише на тих типах будівель, що можуть бути цікавими для приватного забудовника, отже відповідно до Наказу Державного комітету будівництва, архітектури та житлової політики України Про затвердження Інструкції про порядок проведення технічної інвентаризації об'єктів нерухомого майна розрізняють такі види приватних будівель:</p>
+
+            <p class="black-text"><strong>Oдноквартирні</strong> (садибні) житлові будинки. Житловий будинок  указаної  категорії складається із житлових та допоміжних (нежитлових) приміщень.</p>
+
+            <p class="black-text">Характерними допоміжними приміщеннями будинків є: передпокій, кухня,  коридор,  веранда,  вбиральня,  комора,   приміщення   для автономної системи опалення, пральня тощо. На    присадибних    ділянках,    крім   житлових   будинків, розміщуються  господарські  будівлі  (сараї (хліви),  літні кухні, гаражі, майстерні, навіси, вбиральні тощо) та господарські споруди (колодязі,  вигрібні  ями,  огорожі,  ворота,  хвіртки,  замощення тощо.</p>
+
+            <p class="black-text">До них відносяться:  прибудовані житлові кімнати та допоміжні приміщення  (тамбури,  веранди,  кухні,  комори,  ванні   кімнати, вбиральні тощо).Окрім того особа може здійснити прибудову до власного житлового будинку. Прибудовою (до  житлового   будинку)   є   частина   будинку, розташована  поза контуром її капітальних зовнішніх стін і яка має з основною частиною будинку одну (або більше)  спільну  капітальну стіну.  Прибудови мають внутрішнє сполучення з основними частинами будинків.</p>
+
+            <p class="black-text"><strong>Садові будинки</strong> будинок для літнього (сезонного)використання.</p>
+
+            <p class="black-text"><strong>Дачні будинки</strong> це житловий будинок для використання протягом року з метою позаміського відпочинку.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l4 teal darken-2 z-depth-1 hoverable">
+        <div class="icon-block mar10px">
+          <div class="center green-text"><i class="large material-icons">group</i></div>
+          <h5 class="center white-text flow-text teal darken-4 z-depth-1 mar10upanddown">Індивідуальне будівництво</h5>
+
+          <p class="black-text">Якщо ви мрієте про власний будинок і вирішили здійснити цю мрію шляхом будівництва будинку ви розпочинаєте непростий шлях.</p>
+
+          <p class="black-text">Для початку визначимось які саме типи будинків ви можете звести на власній земельній ділянці. Ми зупинимось лише на тих типах будівель, що можуть бути цікавими для приватного забудовника, отже відповідно до Наказу Державного комітету будівництва, архітектури та житлової політики України Про затвердження Інструкції про порядок проведення технічної інвентаризації об'єктів нерухомого майна розрізняють такі види приватних будівель:</p>
+
+          <p class="black-text"><strong>Oдноквартирні</strong> (садибні) житлові будинки. Житловий будинок  указаної  категорії складається із житлових та допоміжних (нежитлових) приміщень.</p>
+
+          <p class="black-text">Характерними допоміжними приміщеннями будинків є: передпокій, кухня,  коридор,  веранда,  вбиральня,  комора,   приміщення   для автономної системи опалення, пральня тощо. На    присадибних    ділянках,    крім   житлових   будинків, розміщуються  господарські  будівлі  (сараї (хліви),  літні кухні, гаражі, майстерні, навіси, вбиральні тощо) та господарські споруди (колодязі,  вигрібні  ями,  огорожі,  ворота,  хвіртки,  замощення тощо.</p>
+
+          <p class="black-text">До них відносяться:  прибудовані житлові кімнати та допоміжні приміщення  (тамбури,  веранди,  кухні,  комори,  ванні   кімнати, вбиральні тощо).Окрім того особа може здійснити прибудову до власного житлового будинку. Прибудовою (до  житлового   будинку)   є   частина   будинку, розташована  поза контуром її капітальних зовнішніх стін і яка має з основною частиною будинку одну (або більше)  спільну  капітальну стіну.  Прибудови мають внутрішнє сполучення з основними частинами будинків.</p>
+
+          <p class="black-text"><strong>Садові будинки</strong> будинок для літнього (сезонного)використання.</p>
+
+          <p class="black-text"><strong>Дачні будинки</strong> це житловий будинок для використання протягом року з метою позаміського відпочинку.</p>
+        </div>
+      </div>
+
+      <div class="col s12 m12 l4 teal darken-2 z-depth-1 hoverable">
+        <div class="icon-block mar10px">
+          <div class="center green-text"><i class="large material-icons">settings_applications</i></div>
+          <h5 class="center white-text flow-text teal darken-4 z-depth-1 mar10upanddown">Комерційна забудова</h5>
+
+          <p class="black-text">Термін «комерційна земля» з'явився порівняно недавно і означає площі, відведені під будівництво споруд промислового, комерційного та соціального призначення. Найбільш витребувана комерційна нерухомість Рівного - з низькими термінами окупності та високою рентабельністю: бізнес центри, автозаправки, торговельні об'єкти, складські приміщення, спортивні та розважальні комплекси.<p>
+
+          <p class="black-text">Земельна ділянка в Рівному під комерційну забудову, як потенційний об'єкт купівлі-продажу, в першу чергу представляє зацікавленість для забудовників, інвесторів і для фірм, що надають перевагу будувати самостійно, а не купувати готовий будинок.</p>
+
+          <p class="black-text"><strong>Розташування.</strong> Ціна на земельну ділянку в межах міста радикально відрізняється від ціни на землю за його окраїною. Платити великі гроші, щоб купити земельну ділянку в центрі міста має сенс у тому випадку, якщо прогнозована віддача від інвестицій з лишком окупить вкладені кошти. Якщо престижність розташування офісу в шикарному бізнес центрі додасть плюсів іміджу компанії. Або якщо сама присутність торгової чи розважальної точки на жвавому місці приверне відвідувачів і покупців, збільшить прибутковість закладу і дозволить не витрачатися на піар і рекламу.</p>
+
+          <p class="black-text"><strong>Площа.</strong> Цінність земельної ділянки під забудову визначається тим, наскільки масштабний об'єкт можна звести на його площі. Чим більше споруда - тим дорожче ділянка. На відкритих майданчиках, розташованих в зручній транспортній доступності, вигідно будувати великі супермаркети і торговельні комплекси зі стоянками для приватних автомобілів. Території уздовж жвавих магістралей ідеальні для будівництва логістичних центрів, АЗС, автосервісу, міні-готелів, а центральні квартали міста - для зведення висотних бізнес центрів.</p>
+
+          <p class="black-text"><strong>Інфраструктура.</strong> Тут важливі такі критерії, як наявність доріг і комунікацій або можливість їх проведення в найближчому майбутньому, фактори навколишнього середовища - рівень грунтових вод, характеристики грунту. Земельна ділянка в Хмельницькому без комунікацій та під'їзних шляхів втрачає половину вартості, а чим краще екологія та інфраструктура - тим вище ціна.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 
+<div class="parallax-container z-depth-1">
+  <div class="parallax"><img src="img/three.jpg" alt="image"></div>
+</div>
 
-<!--Footer-->
+
 <footer id="contact" class="page-footer teal scrollspy">
-    <div class="container hoverable">  
-        <div class="row pad5050">            
-          <div class="col s12 m6 teal darken-2 z-depth-1 hoverable">
+    <div class="container z-depth-1">  
+      <div class="row">
+        <div class="col s12 m12 l12 center">
+          <h2 class="center flow-text teal lighten-2 z-depth-1 mar10upanddown">Контакти <i class="material-icons">contact_phone</i></h2> 
+        </div>
+      </div>
+        <div class="row pad50bottom">            
+          <div class="col s12 m12 l6 teal darken-2 z-depth-1">
             <form class="col s12" action="contact.php" method="post">
-              <div class="row">
-                <div class="input-field col s6">
+              <div class="row mar10upanddown">
+                <div class="input-field col s12">
                   <i class="material-icons prefix">email</i>
                   <input id="email" type="email" class="validate white-text">
-                  <label for="email" data-error="wrong" data-success="right" class="white-text">Пошта</label>
-                </div>
-                <div class="input-field col s6">
-                  <i class="material-icons prefix">phone</i>
-                  <input id="icon_telephone" type="tel" class="validate white-text">
-                  <label for="icon_telephone" class="white-text">Телефон</label>
+                  <label for="email" data-error="wrong" data-success="right" class="white-text">Поштова адреса: </label>
                 </div>
                 <div class="input-field col s12">
                   <i class="material-icons prefix">mode_edit</i>
                   <textarea id="textarea1" class="materialize-textarea white-text"></textarea>
-                  <label for="textarea1" class="white-text">Текст</label>
+                  <label for="textarea1" class="white-text">Текст: </label>
                 </div>
                 <div class="col s12 center">
-                  <button class="btn waves-effect waves-light red darken-1" type="submit">Відправити
+                  <button class="btn waves-effect waves-light red darken-1 animated pulse infinite" type="submit">Відправити
                     <i class="mdi-content-send right white-text"></i>
                   </button>
                 </div>
@@ -340,10 +440,14 @@
 
 
             
-            <div class="col s12 m4 offset-m2 teal darken-2 z-depth-1 hoverable">
-              <div class="col s12">
-                <p class="white-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, corrupti. Omnis eveniet totam aliquam sapiente numquam provident illo facilis temporibus soluta dolorum maiores molestias beatae, eos repellendus ea odit dolor ut. Ullam labore aspernatur voluptate iusto vero tenetur consequuntur in, </p>
-              </div>              
+            <div class="col s12 m12 l4 offset-l2 teal darken-2 z-depth-1 center">              
+                <div class="fb-page mar10upanddown"
+                  data-href="https://www.facebook.com/facebook"
+                  data-width="440"                  
+                  data-hide-cover="false"
+                  data-show-facepile="true" 
+                  data-show-posts="false">                  
+                </div>
             </div>
         </div>
     </div>
@@ -351,10 +455,10 @@
         <div class="container">
           <div class="row">
             <div class="col s6 left-align">
-              Made by <a class="white-text" href="#">Hello</a>.
+              <a class="white-text" href="/">Land.rv.ua</a> created by 2016.
             </div>
             <div class="col s6 right-align">
-              Thanks to <a class="white-text" href="http://materialize.com/">materialize</a>
+              Design by <a class="white-text" href="http://materialize.com/">materialize</a>
             </div>
           </div>
         </div>
@@ -363,7 +467,7 @@
 
       <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>       
-      <script type="text/javascript" src="js/map-new.js"></script>
+      <script type="text/javascript" src="js/map.js"></script>
 
       <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpSKIk7W0ZX5cNGZFI6khHVtOPLeQLUV4&callback=initMap">
@@ -389,12 +493,23 @@
         $('.carousel.carousel-slider').carousel({full_width: true});
         $(document).ready(function(){
           $('.slider').slider({full_width: true});
-        });
+        });        
+      </script> 
+      <script type="text/javascript">
         $(document).ready(function(){
-          $('.carousel').carousel();
+          $("#menu").on("click","a", function (event) {
+              event.preventDefault();
+              var id  = $(this).attr('href'),
+                  top = $(id).offset().top;
+              $('body,html').animate({scrollTop: top}, 800);
+          });
         });
-        $('#modal1').openModal();
-        $('#modal1').closeModal();
-      </script>   
+        $(document).ready(function() {
+            resetHeight();    
+            $(window).resize(function() {
+                resetHeight();
+            });   
+        });
+      </script>  
     </body>
   </html>

@@ -1,17 +1,30 @@
 body {
     display: flex;
     min-height: 100vh;
-    flex-direction: column;
+    flex-direction: column;    
     background-color: #009688;
 }
 main {
     flex: 1 0 auto;
 }
+nav ul a{
+    padding: 0 7px;
+}
+nav ul a:active, nav ul a:hover{
+    border-bottom: 2px solid white;
+}
+.opasity{
+    opacity: 0.75;
+}
+.brand-logo{
+	margin: 7px 0px 5px 0px;
+	padding:  5px 0px 5px 0px;
+}
 .tail-back{
     background-color: #009688;
 }
 .parallax-container {
-    height: 600px;
+    height: 400px;
 }
 #map_wrapper{
     padding: 0;
@@ -24,7 +37,7 @@ main {
 	margin-top: 10%;
 }
 .marginTB{
-    padding:  200px 0px 100px 0px;
+    padding:  100px 0px 50px 0px;
 }
 .padding0{
     margin:  0px;
@@ -33,10 +46,73 @@ main {
 .bgr img{
     background-color: #009688;
 }
-#map{
-    height: 700px;
-}
 .pad5050{
     padding: 50px 0px 50px 0px;
 }
-.
+.pad50bottom{
+    padding: 0px 0px 50px 0px;
+}
+.mar5050{
+    margin: 50px 0px 50px 0px;
+}
+.mar10px{
+    margin: 10px;
+    padding: 10px;
+    text-align:  justify;
+}
+.slider .slides{
+    background-color: #00695c;
+}
+.mar10upanddown{
+    padding: 10px 0px 10px 0px;
+}
+.mar20upanddown{
+    padding: 20px 0px 20px 0px;
+}
+.fontNew{
+    font-family: Calibri, GillSans, Trebuchet, sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    color: #212121;
+}
+#map {
+    margin: 0;
+    padding: 0;
+    height: 700px;
+    max-width: none;
+}
+#map img {
+    max-width: none !important;
+}
+.bbb{
+	color: #009688;
+}
+.info-window{
+	padding: 10px;
+	width: 300px !important;
+}
+.info-window > p, .info-window h5, .info-window h6{
+	color: white;
+    background: #009688;
+    padding: 10px;
+}
+.info-window h4{
+    text-align:  center;
+    color: white;
+    background-color: #009688;
+    padding: 10px;
+}
+.material-icons {
+    vertical-align: bottom;
+}
+.nullpadmar > h1{
+    font-size: 1.5em;
+    padding: 0px;
+    margin: 0px;
+}
+.indicators{
+    display: none;
+}
+.pad10pxtop{
+    padding-top: 20px;
+}
