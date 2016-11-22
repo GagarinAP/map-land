@@ -1,17 +1,32 @@
+/* html {
+    font-family: Tahoma, sans-serif;
+} */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;    
-    background-color: #009688;
+    background-color: rgba(83, 110, 113, 1);
+    background-image: url('../img/oMvd4OgFzzY.jpg');
+    background-size: cover;
 }
 main {
     flex: 1 0 auto;
 }
 nav ul a{
+    font-size: 24px;
     padding: 0 7px;
+}
+/* .slider .slides li .caption {
+    top: 25%;
+} */
+.font30{
+    font-size: 30px;
 }
 nav ul a:active, nav ul a:hover{
     border-bottom: 2px solid white;
+}
+.nav-wrapper{
+    margin: 0px 20px;
 }
 .opasity{
     opacity: 0.75;
@@ -20,99 +35,349 @@ nav ul a:active, nav ul a:hover{
 	margin: 7px 0px 5px 0px;
 	padding:  5px 0px 5px 0px;
 }
-.tail-back{
-    background-color: #009688;
-}
-.parallax-container {
+/* .parallax-container {
     height: 400px;
-}
+} */
 #map_wrapper{
     padding: 0;
 }
-.reddd{
-	z-index: 5;
-	position: relative;
-	width: 400px;
-	height: 350px;
-	margin-top: 10%;
-}
+/* .gm-style{
+    font-family: Tahoma, sans-serif;
+} */
 .marginTB{
-    padding:  100px 0px 50px 0px;
-}
-.padding0{
-    margin:  0px;
-    padding:  10px 0px;
-}
-.bgr img{
-    background-color: #009688;
-}
-.pad5050{
-    padding: 50px 0px 50px 0px;
+    padding:  50px 0px 25px 0px;
 }
 .pad50bottom{
     padding: 0px 0px 50px 0px;
-}
-.mar5050{
-    margin: 50px 0px 50px 0px;
 }
 .mar10px{
     margin: 10px;
     padding: 10px;
     text-align:  justify;
 }
-.slider .slides{
-    background-color: #00695c;
-}
 .mar10upanddown{
+    padding: 5px 0px 5px 0px;
+    margin-top: 50px;
+}
+.mar10upanddown10{
     padding: 10px 0px 10px 0px;
 }
-.mar20upanddown{
-    padding: 20px 0px 20px 0px;
-}
 .fontNew{
-    font-family: Calibri, GillSans, Trebuchet, sans-serif;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 36px;
     color: #212121;
 }
+.fontsize{
+    font-weight: 400;
+    font-size: 16px;    
+}
 #map {
-    margin: 0;
-    padding: 0;
-    height: 700px;
-    max-width: none;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 0;    
 }
 #map img {
     max-width: none !important;
-}
-.bbb{
-	color: #009688;
+    margin: -15px 0px -16px 0px;
 }
 .info-window{
-	padding: 10px;
 	width: 300px !important;
 }
-.info-window > p, .info-window h5, .info-window h6{
+.info-window > p, .info-window h3, .info-window h4, .info-window h5, .info-window h6{
 	color: white;
     background: #009688;
     padding: 10px;
 }
-.info-window h4{
-    text-align:  center;
+.info-window h3{
+    text-align:  left;
     color: white;
-    background-color: #009688;
+    background-color: rgba(83, 110, 113, 1);;
     padding: 10px;
+    font-size: 20px;
+}
+.info-window h4{
+    text-align:  left;
+    color: white;
+    background-color: rgba(83, 110, 113, 1);;
+    margin: 2px 0px;
+    font-size: 16px;
 }
 .material-icons {
     vertical-align: bottom;
-}
-.nullpadmar > h1{
-    font-size: 1.5em;
-    padding: 0px;
-    margin: 0px;
 }
 .indicators{
     display: none;
 }
 .pad10pxtop{
-    padding-top: 20px;
+    padding-top: 20px;    
 }
+footer{
+    background-color: transparent;
+}
+nav .brand-logo{
+    position: relative;
+    padding-right: 20px;
+}
+.color-nav{
+    background-color: #22333b;
+}
+.opac06{
+    opacity: 0.9;
+}
+.colo{
+    background-color: rgba(83, 110, 113, 0.8);
+}
+h1{
+    padding: 20px 0px 20px 0px;
+}
+.btn, .btn-large, .btn:hover, .btn-large:hover {
+    background-color: rgba(83, 110, 113, 0.8);
+}
+.input-field .prefix.active{
+    color: white;
+}
+
+
+.collection{
+    margin: 0px;
+    padding: 20px;
+}
+.collection > li{
+    padding-bottom: 10px;
+}
+
+.plans-container .collection {
+  border: none;
+}
+.plans-container .collection .collection-item {
+  border-bottom: none;
+  font-size: 1.0714285714285714rem;
+  line-height: 1.6em;
+}
+.plans-container .collection .collection-item:before {
+  font-family: "Material-Design-Icons";
+  font-size: 1.2857142857142858rem;
+  line-height: 1.6em;
+  color: #009315;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  content: "\e623";
+  margin-right: 10px;
+}
+.plans-container .card .card-image {
+  position: relative;
+  width: 100%;
+}
+.plans-container .card .card-image .card-title {
+  position: relative;
+  font-size: 1.2857142857142858rem;
+  line-height: 1.6em;
+  width: 100%;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  background: rgba(0, 0, 0, 0.1);
+}
+.plans-container .card .card-image .price {
+  position: relative;
+  font-size: 5rem;
+  line-height: 1.6em;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+}
+.plans-container .card .card-image .price sup {
+  font-weight: 100;
+  font-size: 1.4285714285714286rem;
+  line-height: 1.6em;
+  top: -35px;
+}
+.plans-container .card .card-image .price sub {
+  font-weight: 100;
+  font-size: 1.4285714285714286rem;
+  line-height: 1.6em;
+  top: 0px;
+}
+.plans-container .card .card-image .price-desc {
+  text-align: center;
+  color: #fff;
+  padding-bottom: 10px;
+}
+.plans-container .card .card-content {
+  padding: 0;
+}
+
+
+.jumbotron-container {
+  background-image: url('../img/jumbotron-bg.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+.jumbotron-container h1 {
+  color: #fff;
+  font-size: 2.142857142857143rem;
+  line-height: 1.6em;
+  font-weight: 100;
+}
+.jumbotron-container .jumbotron-device {
+  position: relative;
+  margin: 20px 0 0;
+  z-index: 1;
+}
+/* ---------------------- */
+.jumbotron-container1 {
+  background-image: url('../img/jumbotron-bg1.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+.jumbotron-container1 h1 {
+  color: #fff;
+  font-size: 2.142857142857143rem;
+  line-height: 1.6em;
+  font-weight: 100;
+}
+.jumbotron-container1 .jumbotron-device {
+  position: relative;
+  margin: 20px 0 0;
+  z-index: 1;
+}
+/* ---------------------- */
+.jumbotron-container2 {
+  background-image: url('../img/jumbotron-bg2.jpg');
+  background-position: top;
+  background-size: cover;
+  background-attachment: fixed;
+  min-height: 70vh;
+}
+.jumbotron-container2 h1 {
+  color: #fff;
+  font-size: 2.142857142857143rem;
+  line-height: 1.6em;
+  font-weight: 100;
+}
+.jumbotron-container2 .jumbotron-device {
+  position: relative;
+  margin: 20px 0 0;
+  z-index: 1;
+}
+.pad200{
+  padding: 100px 0px 100px 0px;
+}
+.padd100{
+    padding-top: 100px;
+}
+.padd50{
+    padding-top: 50px;
+}
+.undrline{
+  text-decoration:underline;
+}
+/* .row{
+  padding-bottom: 20px;
+}
+.container .row{
+  margin-left: 0rem;
+  margin-right: 0rem;
+}
+.section{
+  padding-top: 0rem;
+  padding-bottom: 0.7rem;
+} */
+
+@media only screen and (min-width: 992px){
+    .container{
+        width: 90%;
+    }
+    .subscribe-container {
+    padding: 35px 0;
+    }
+    .subscribe-container button {
+      margin-top: 25px;
+    }
+}
+@media only screen and (max-width: 601px){
+    .jumbotron-container{
+        min-height: 0vh;
+    }
+    .jumbotron-container h1{           
+        font-weight: 300;
+    }    
+    .container{
+        width: 90%;
+    }
+    .padd100{
+        padding-top: 10px;
+    }
+    img.responsive-img{
+        max-width: 70%;
+    }
+    .brand-logo{
+        margin-top: 2px;
+    }
+}
+
+.contact-container {
+  position: relative;
+  padding: 40px 0;
+  z-index: 2;
+}
+.contact-container .card-title {
+  color: #ee184c;
+}
+
+/* subscribe
+---------------------------------------------------------------------------------------*/
+.subscribe-container {
+  background-color: #F5F5F5;
+  padding: 25px 0;
+  margin-top: 50px;
+}
+.subscribe-container p {
+  color: #fff;
+}
+.subscribe-container .input-field label {
+  color: #fff;
+}
+.subscribe-container .input-field input[type=email]:focus + label {
+  color: #fff;
+}
+.subscribe-container .input-field input[type=email] {
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 1px 0 0 #fff;
+}
+.subscribe-container .input-field input[type=email]:focus {
+  border-bottom: 1px solid #1b5e20;
+  box-shadow: 0 1px 0 0 #1b5e20;
+}
+footer.page-footer{
+  padding-top: 0px;
+  margin-top: 0px;
+}
+.modal{
+  max-height: 85%;
+  width: 90%;
+  border-radius: 0px;
+}
+
+#map1 {
+        width: 100%;
+        height: 300px;
+        padding: 0px 5px 10px 0px;
+        margin-bottom: 15px;        
+      }
+      .modal-content {
+        margin: 20px;
+      }
+      /* .modal-content p,h3 {
+        margin: 20px;
+      } */
